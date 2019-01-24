@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@email.com"/> 
+          </p>
+
+           <p> 
+            <label for="estado_cad">Estado</label>
+            <input id="estado_cad" name="estado_cad" required="required" type="estado" placeholder="Ex.: Minas Gerais"/> 
+          </p>
+
+            <p> 
+            <label for="cidade_cad">Cidade</label>
+            <input id="cidade_cad" name="cidade_cad" required="required" type="cidade" placeholder="Ex.: Belo Horizonte"/> 
+          </p>
+
+                <p> 
+            <label for="rua_cad">Rua</label>
+            <input id="rua_cad" name="rua_cad" required="required" type="rua" placeholder="R."/> 
+          </p>
+
+              <p> 
+            <label for="bairro_cad">Bairro</label>
+            <input id="bairro_cad" name="bairro_cad" required="required" type="bairro" placeholder="Bairro"/> 
+          </p>
+
+              <p> 
+            <label for="cep_cad">CEP</label>
+            <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+          </p>
+
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" type="password" placeholder="ex. S&nh@1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+
+          <p>
+          	<input type="reset" value = "Resetar"/>
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
+
+
